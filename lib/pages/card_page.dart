@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:city/shared/image/colors.dart';
+import 'package:PetSave/shared/image/colors.dart';
 
 class CardPage extends StatelessWidget {
   const CardPage({Key? key}) : super(key: key);

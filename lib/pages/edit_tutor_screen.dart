@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:city/pages/api_config.dart';
+import 'package:PetSave/pages/api_config.dart';
 import '../shared/image/colors.dart';
 
 class EditTutorScreen extends StatefulWidget {

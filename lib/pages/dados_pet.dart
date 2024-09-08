@@ -1,10 +1,10 @@
 import 'dart:convert';
-import 'package:city/pages/api_config.dart';
+import 'package:PetSave/pages/api_config.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../shared/image/colors.dart';
 import 'package:http/http.dart' as http;
-import 'package:city/pages/edit_pet_page.dart'; // Add this import
+import 'package:PetSave/pages/edit_pet_page.dart'; // Add this import
 
 class DadosPet extends StatefulWidget {
   const DadosPet({super.key});

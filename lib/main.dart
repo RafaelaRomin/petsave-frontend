@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:city/pages/splash_screen.dart';
+import 'package:PetSave/pages/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());

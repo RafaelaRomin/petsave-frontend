@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:city/pages/api_config.dart';
-import 'package:city/pages/dados_cadastrais.dart';
-import 'package:city/pages/home_page.dart';
-import 'package:city/shared/image/colors.dart';
+import 'package:PetSave/pages/api_config.dart';
+import 'package:PetSave/pages/dados_cadastrais.dart';
+import 'package:PetSave/pages/home_page.dart';
+import 'package:PetSave/shared/image/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
@@ -54,7 +54,10 @@ class _LoginPageState extends State<LoginPage> {
           final userEmail = responseData['email'] as String?;
           final userName = responseData['name'] as String?;
 
-          if (token != null && userId != null && userEmail != null && userName != null) {
+          if (token != null &&
+              userId != null &&
+              userEmail != null &&
+              userName != null) {
             // Save the token, userId, email, and name of the user
             SharedPreferences prefs = await SharedPreferences.getInstance();
             await prefs.setString('token', token);
@@ -134,8 +137,7 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   style: const TextStyle(color: darkGreyColor),
                   decoration: const InputDecoration(
-                      contentPadding: EdgeInsets.only(
-                          top: -5), 
+                      contentPadding: EdgeInsets.only(top: -5),
                       enabledBorder: UnderlineInputBorder(
                         borderSide: BorderSide(
                           color: ligthCoral,
@@ -143,8 +145,8 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                       focusedBorder: UnderlineInputBorder(
                           borderSide: BorderSide(
-                            color: ligthCoral,
-                          )),
+                        color: ligthCoral,
+                      )),
                       hintText: "Email",
                       hintStyle: TextStyle(color: darkGreyColor),
                       prefixIcon: Icon(
@@ -171,8 +173,8 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     focusedBorder: const UnderlineInputBorder(
                         borderSide: BorderSide(
-                          color: ligthCoral,
-                        )),
+                      color: ligthCoral,
+                    )),
                     hintText: "Senha",
                     hintStyle: const TextStyle(color: darkGreyColor),
                     prefixIcon: const Icon(
@@ -229,7 +231,7 @@ class _LoginPageState extends State<LoginPage> {
                   child: TextButton(
                     style: ButtonStyle(
                       backgroundColor:
-                      MaterialStateProperty.all(midleLightGreyColor),
+                          MaterialStateProperty.all(midleLightGreyColor),
                     ),
                     onPressed: () {
                       Navigator.pushReplacement(

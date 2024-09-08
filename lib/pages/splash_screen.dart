@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:city/pages/login_page.dart';
-import 'package:city/pages/home_page.dart';
+import 'package:PetSave/pages/login_page.dart';
+import 'package:PetSave/pages/home_page.dart';
 import 'package:http/http.dart' as http;
-import 'package:city/pages/api_config.dart';
+import 'package:PetSave/pages/api_config.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
